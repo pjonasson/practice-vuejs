@@ -4,8 +4,15 @@ var app = new Vue({
   el: "#app",
   data: function () {
     return {
-      message: "Hello from JavaScript!",
+      message: "These are sports I play!",
+      sports: ["football", "baseball", "soccer", "basketball"],
     };
+  },
+  methods: {
+    addNewSport: function () {
+      this.sports.push(this.newSport).toUpperCase();
+      this.newSport = "";
+    },
   },
 });
 

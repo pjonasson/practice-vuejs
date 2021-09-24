@@ -10,6 +10,11 @@
     <h1>Hello from HTML!</h1>
     <div id="app">
       {{ message }}
+      <input type="text" v-model="newSport"/>
+      <button v-on:click="addNewSport">Add Sport to List</button>
+      <div><ol>
+      <li v-for="sport in sports">{{ sport }}</li></ol>
+    </div>
     </div>
     <div id="app-2">
       <p>
