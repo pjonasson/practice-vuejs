@@ -6,6 +6,7 @@ var app = new Vue({
     return {
       message: "These are sports I play!",
       sports: ["football", "baseball", "soccer", "basketball"],
+      extra: false,
     };
   },
   methods: {

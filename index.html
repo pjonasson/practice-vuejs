@@ -14,6 +14,8 @@
       <button v-on:click="addNewSport">Add Sport to List</button>
       <div><ol>
       <li v-for="sport in sports">{{ sport }}</li></ol>
+      <button v-on:click="extra = !extra">Toggle Info</button>
+      <p v-if="extra">Blah Blah Blah</p>
     </div>
     </div>
     <div id="app-2">
@@ -24,7 +26,7 @@
     </div>
     <div id="app-3">
       <p>{{ message }}</p>
-      <input type="image"  v-model="message">
+      <input type="text"  v-model="message">
     </div>
   </body>
 </html>
